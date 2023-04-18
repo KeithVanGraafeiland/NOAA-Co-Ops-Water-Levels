@@ -7,7 +7,7 @@
 ## products = water_level, air_temperature, water_temperature, wind, air_pressure, air_gap, conductivity, visibility, humidity, salinity,\
 ##            hourly_height, high_low, daily_mean, monthly_mean, one_minute_water_level, predictions, datums, currents, currents_predictions
 
-## NOTE - No predictions available for Great Lakes (IGLD)
+## #NOTE - No predictions available for Great Lakes (IGLD)
 
 from arcgis.features import FeatureLayer
 from datetime import datetime
@@ -20,7 +20,7 @@ import glob
 import os
 
 ## Define Constants
-# STATIONS_FL_URL = 'https://idpgis.ncep.noaa.gov/arcgis/rest/services/NOS_Observations/CO_OPS_Products/FeatureServer/0'
+STATIONS_FL_URL = 'https://idpgis.ncep.noaa.gov/arcgis/rest/services/NOS_Observations/CO_OPS_Products/FeatureServer/0'
 # STATIONS_FL_URL = 'https://idpgis.ncep.noaa.gov/arcgis/rest/services/NOS_Observations/CO_OPS_Stations/FeatureServer/0'
 URL1 = 'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date='
 WATER_LEVEL_QUERY = '&product=water_level'
@@ -42,7 +42,7 @@ WATER_LEVEL_STATIONS_IGLD = ROOT + "\stations\Water_Level_Stations_igld.csv"
 WATER_LEVEL_CSV_DIRECTORY = ROOT + "\\water_level"
 PREDICTIONS_CSV_DIRECTORY = ROOT + "\\prediction"
 
-## Get active station list
+# Get active station list
 
 def split_water_level_stations_by_datum():
     STATION_MASTER_DF = pandas.read_csv(WATER_LEVEL_STATION_MASTER)
@@ -126,13 +126,15 @@ def get_IGLD_station_info():
 def merge_water_level_CSV_products():
     WATER_LEVEL_STATIONS_MERGED_CSV = WATER_LEVEL_CSV_DIRECTORY + "\\" + "All_Water_Level_Stations.csv"
     PREDICTIONS_STATIONS_MERGED_CSV = PREDICTIONS_CSV_DIRECTORY + "\\" + "All_Stations_Predictions.csv"
-    # merging the files
+    os.remove(WATER_LEVEL_STATIONS_MERGED_CSV)
+    os.remove(PREDICTIONS_STATIONS_MERGED_CSV)
+    ## merging the files
     merged_water_level = os.path.join(WATER_LEVEL_CSV_DIRECTORY, "*.csv")
     merged_predictions = os.path.join(PREDICTIONS_CSV_DIRECTORY, "*.csv")
-    # A list of all joined files is returned
+    ## A list of all joined files is returned
     joined_water_level_list = glob.glob(merged_water_level)
-    joined_predictions_list = glob.glob(merged_water_level)
-    # Finally, the files are joined
+    joined_predictions_list = glob.glob(merged_predictions)
+    ## Now the files are joined
     WATER_LEVEL_STATIONS_MERGED = pandas.concat(map(pandas.read_csv, joined_water_level_list), ignore_index=True)
     WATER_LEVEL_STATIONS_MERGED.to_csv(WATER_LEVEL_STATIONS_MERGED_CSV, index=False)
     print("Finished merging water level data.....")
