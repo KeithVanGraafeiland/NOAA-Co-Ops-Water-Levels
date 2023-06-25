@@ -82,7 +82,7 @@ def get_station_info(datum, feature_table):
         prediction_csv = ROOT + "\\prediction\\" + str(station) + "_" + CURRENT_DATE + "_prediction.csv"
         URL2 = '&datum='+ datum + '&units=english&time_zone=gmt&application=web_services&format=csv&interval=h'
         ## Build URLs
-        WATER_LEVEL_URL = URL1 + YESTERDAY_DATE + RANGE + STATION_QUERY + str(station) + WATER_LEVEL_QUERY + URL2
+        WATER_LEVEL_URL = URL1 + YESTERDAY_DATE + RANGE + STATION_QUERY + str(station) + zzzURL2
         PREDICTION_URL = URL1 + CURRENT_DATE + RANGE + STATION_QUERY + str(station) + PREDICTION_QUERY + URL2
         ## Retreive results from URL requests
         urllib.request.urlretrieve(WATER_LEVEL_URL, water_level_csv)
