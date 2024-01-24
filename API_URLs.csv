@@ -1,0 +1,10 @@
+Type,Request,link,name,normalize
+High Tide Flooding - Monthly Maximum Likelihoods,Retrieve monthly maximum flood status for all stations for all available dates,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htb/htb_monthly_max.json,htb_monthly_max,floodLikelihood
+High Tide Flooding - Daily Likelihoods Text,Retrieve all flood status text for all region,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htb/htb_text.json,htb_text,floodLikelihoodText
+High Tide Flooding - Daily Likelihoods,Retrieve flood status for all stations for all available dates,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htb.json,htb,floodLikelihood
+High Tide Flooding - Likely Decadal Scenarios,Retrieve likely decadal scenario projections,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_likely_decadal_scenarios.json,htf_likely_decadal_scenarios,LikelyDecadalScenarios
+High Tide Flooding - Record Days and Typical HTF Days in 2000,Retrieve met year annual record days and typical HTF days in 2000,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_record.json,htf_record,AnnualFloodCount
+High Tide Flooding - Decadal Projections,Retrieve decadal projections,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_projection_decadal.json,htf_projection_decadal,DecadalProjection
+High Tide Flooding - Next Met Year Annual Outlook,Retrieve next met year annual outlook,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual_outlook.json,htf_met_year_annual_outlook,MetYearAnnualOutlook
+High Tide Flooding - Met Year Flood Count,Retrieve met year flood count records,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual.json,htf_met_year_annual,MetYearAnnualFloodCount
+High Tide Flooding - Annual Flood Count,Retrieve annual flood count records,https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_annual.json,htf_annual,AnnualFloodCount

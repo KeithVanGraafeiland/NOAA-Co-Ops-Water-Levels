@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../Notebooks"
+		},
+		{
+			"path": "../EPA-Water-Quality"
 		}
 	],
 	"settings": {}
