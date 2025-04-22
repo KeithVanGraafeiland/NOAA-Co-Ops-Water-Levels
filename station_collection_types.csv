@@ -1,24 +1,24 @@
-Option,Description
-waterlevels,Stations that actively measure water levels
-historicwl,Stations that have measured water levels in the past. This includes active stations.
-met,"Stations that have one or more meteorological sensors installed, such as air temperature."
+ï»¿Option,Description
+waterlevels,Stations that actively measureÂ water levels
+historicwl,Stations that have measuredÂ water levels in the past. This includes active stations.
+met,"Stations that haveÂ one or more meteorological sensors installed, such as air temperature."
 waterlevelsandmet,"Combined results of waterlevels and met types. Results in a list of active stations, excluding current meters."
-tidepredictions,Stations that offer tide predictions based on harmonic analysis.
-harcon,Water level stations with measured harmonic constituents.
-datums,Water level stations with datums.
-supersededdatums,Water level stations with superseded datums.
-benchmarks,Water level stations with published benchmarks.
-supersededbenchmarks,Water level stations with superseded benchmarks.
-currents,Real-time current meter stations that are presently deployed and are actively measuring currents.
-historiccurrents,"Current meter stations that are no longer deployed, such as historic real-time stations that have been uninstalled or short-term survey stations."
+tidepredictions,Stations that offerÂ tide predictionsÂ based on harmonic analysis.
+harcon,Water level stations with measuredÂ harmonic constituents.
+datums,Water level stations withÂ datums.
+supersededdatums,Water level stations with supersededÂ datums.
+benchmarks,Water level stations with publishedÂ benchmarks.
+supersededbenchmarks,Water level stations with supersededÂ benchmarks.
+currents,Real-time current meter stationsÂ that are presently deployed and are actively measuring currents.
+historiccurrents,"Current meter stations that are no longer deployed, such asÂ historic real-time stationsÂ that have been uninstalled or short-term survey stations."
 surveycurrents,Short-term current meter stations that collected data for a limited time in order improve tidal current predictions or support operational forecast models.
-currentpredictions,Current meter stations for which tidal current predictions are available.
-cond,Stations that have conductivity sensors installed.
-watertemp,Stations that have water temperature sensors installed.
-physocean,Stations that have a physical oceanography(water temperature/conductivity) sensor installed.
-tcoon,Stations that are affiliated with the Texas Coastal Ocean Observation Network (TCOON).
-1minute,Stations that have 1 minute water level data.
-airgap,Stations that have air gap data.
+currentpredictions,Current meter stations for whichÂ tidal current predictionsÂ are available.
+cond,Stations that haveÂ conductivity sensorsÂ installed.
+watertemp,Stations that haveÂ water temperature sensorsÂ installed.
+physocean,Stations that haveÂ a physical oceanography(water temperature/conductivity) sensorÂ installed.
+tcoon,Stations that are affiliated with theÂ Texas Coastal Ocean Observation Network (TCOON).
+1minute,Stations that haveÂ 1 minute water level data.
+airgap,Stations that haveÂ air gap data.
 visibility,Stations that have visibility sensors installed.
 highwater,Stations that are in High Water Alert.
 lowwater,Stations that are in Low Water Alert.
